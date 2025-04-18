@@ -10,30 +10,35 @@ body {
   background-color: #0a0a0a;
   color: #fff;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 1.5rem 5vw;
   background-color: #111;
+  flex-wrap: wrap;
 }
 
 .logo {
-  height: 40px;
+  height: 2.5rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
 .nav-links a:hover {
@@ -48,40 +53,47 @@ body {
   align-items: center;
   text-align: center;
   background: #0f0f0f;
+  padding: 0 5vw;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
+  font-size: 6vw;
+  margin-bottom: 1rem;
+  max-width: 90vw;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #aaa;
+  max-width: 600px;
 }
 
 section {
-  padding: 80px 20px;
+  padding: 5rem 5vw;
   text-align: center;
 }
 
 .portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0.6rem;
   transition: transform 0.3s;
 }
 
-.portfolio-item img {
+.portfolio-item img,
+.portfolio-item video,
+.portfolio-item iframe {
   width: 100%;
   display: block;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 .portfolio-item:hover {
@@ -93,10 +105,11 @@ section {
   bottom: 0;
   background: rgba(0, 0, 0, 0.65);
   width: 100%;
-  padding: 10px;
+  padding: 0.8rem;
   color: #fff;
   opacity: 0;
   transition: opacity 0.3s;
+  font-size: 0.9rem;
 }
 
 .portfolio-item:hover .overlay {
@@ -108,16 +121,20 @@ section {
   padding: 0;
   font-size: 1.1rem;
   line-height: 2;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .contact p {
   font-size: 1rem;
   color: #ccc;
+  max-width: 500px;
+  margin: auto;
 }
 
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 5vw;
   background: #111;
   font-size: 0.9rem;
   color: #888;
